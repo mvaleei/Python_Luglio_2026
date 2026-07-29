@@ -61,6 +61,22 @@ datiRaggruppati2 = datiFile.groupby(['cognome'])['Importo'].describe()
 print(datiRaggruppati2)
 
 
+print("Importiamo un file excel puro --------------------------------")
+fileLetto =pd.read_excel("Fatture.xlsx")
+print(type(fileLetto))
+
+datiFile.to_excel("Scritto.xlsx",sheet_name="Python Luglio")
+
+
+#creo un oggetto che contiene il filtro da applicare
+maschera = datiFile['BuonFatturato'] == True
+
+
+datiFiltrati = datiFile[maschera]
+datiFiltrati.to_excel("Marketing.xlsx",sheet_name = "Contattare")
+
+
+
 
 
 

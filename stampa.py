@@ -27,6 +27,6 @@ plt.axhline(y = y.mean(), c="y" , linestyle ="dotted"   )
 
 
 
-plt.plot(x,y)
+plt.stem(x,y)
 plt.show()
 

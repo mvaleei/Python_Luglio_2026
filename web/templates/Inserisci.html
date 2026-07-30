@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 align="center">Pagina di inserimento nuovo cane in archivio</h1>
+
+    <form action="{{url_for('registra')}}" method="post">
+        <table>
+            <tr>
+                <td><label for="">Nome</label></td>
+                <td>
+                    <input type="text" name="nomecane">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Razza</label></td>
+                <td>
+                    <input type="text" name="razzacane">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Anni</label></td>
+                <td>
+                    <input type="number" name="annicane">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Aggiungi cane in archivio</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

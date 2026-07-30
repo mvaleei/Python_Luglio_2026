@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 align="center">Visualizzaizone cane appena inserito in archivio</h1>
+
+
+    <table border="2">
+        <tr>
+            <td><label for="">ID nuovo</label></td>
+            <td>
+                <label for="">{{oggettofrontEnd[0]}}</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Nome</label></td>
+            <td>
+                <label for="">{{oggettofrontEnd[1]}}</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Razza</label></td>
+            <td>
+                <label for="">{{oggettofrontEnd[3]}}</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">Anni</label></td>
+            <td>
+                <label for="">{{oggettofrontEnd[2]}}</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <a href="{{url_for('homemia')}}">Torna alla home page</a>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
